@@ -1,0 +1,19 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">Gifs-App</h3>
+    <hr class="text-white"/>
+      <div class="list-group list-reset">
+        <!-- <a href="#" class="list-group-item list-group-item-action">
+          Dashboard
+        </a> -->
+        <!-- Con un ngFor obtenemos los datos guardados en el arreglo del hoistorial -->
+        <a 
+        href="#" 
+        class="list-group-item list-group-item-action"
+        *ngFor="let item of historial" 
+        (click)="buscar(item)"
+        >
+          {{item | titlecase}}
+          <!-- title case es para capitalizar los textos  -->
+        </a>
+      </div>
+</div>
